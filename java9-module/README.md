@@ -30,3 +30,34 @@ Hello world
 ```
 
 with java 9, instead of classpath use module parameter which is `-p`
+
+
+#### REPL
+REPL ( Read Eval Print Loop) - interactive command line tool where you can execute java
+
+#### Collections Factory methods
+
+Create Unmodifiable list/Set
+List.of("A", "B").
+Set.of("A", "B")
+
+Creating map with initial value.
+
+Map.ofEntries(Map.entry("Test1", ", "Hello1"), Map.entry("Test2", ", "Hello2"));
+
+Map.of("Test1", ", "Hello1", "Test2", ", "Hello2");
+
+
+#### Changes in Streams API
+TakeWhile()  -  this will allow to take stream of the first batch with this and process
+DropWhile() - ignore all the results with this rule
+
+#### Changes in Optional class 
+
+Optional.orElse
+Optional.orElseGet
+Optional.orElseThrow
+Optional.IfPresent()
+Optional.ifPresentOrElse( obj-> dosomething(obj), () -> {})
+Optional.or()
+Optional.stream
