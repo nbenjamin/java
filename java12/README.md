@@ -1,9 +1,8 @@
 # Java 12 main features
 
-`Preview Feature` - This feature enables to use features which is not finalized or not really ready,
-this might be ready in upcoming releases.
+`Preview Feature` - This feature enables to use features which are not finalized or not really ready, this might be ready in upcoming releases.
 
-By default this feature is disabled in java 12 both in compile and runtime.
+By default, this feature is disabled in Java 12 both in compile and runtime.
 
 Enable preview feature in compile time
 
@@ -59,14 +58,14 @@ String type = switch (scanner.next()) {
 System.out.println(" Switch return type - "+ type);
 ```
 
-Switch case response can have full block of code, in that case `break` will use to return the value.
-Similar to `return somevalue` break will have something like this `break value`
+Switch case response can have a full block of code, in that case, `break` will use to return the value.
+Similar to `return some value` break will have something like this `break value`
 
 
 ### Collectors.teeing
 
-A new static method `teeing` to collectors interface, which allows to collect
-two independent collectors and then merge their results using supplied function.
+A new static method `teeing` to collectors interface, which allows collecting
+two independent collectors and then merge their results using the supplied function.
 
 ex:
 ```java
@@ -80,7 +79,7 @@ Optional<String> result = Stream.of(5,11,1,9,3)
 System.out.println(result.get());
 ```
 
-### String literal changes ( Not yet supported)
+### String literal changes ( Not yet supported as of now)
 
 Traditional String Literals
 ```java
